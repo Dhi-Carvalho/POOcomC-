@@ -65,6 +65,11 @@ namespace ExemploPOO
       Calculadora calc = new Calculadora();
       System.Console.WriteLine("Resultado da primeira soma: " + calc.Somar(5, 10));
       System.Console.WriteLine("Resultado da segunda soma: " + calc.Somar(6, 10, 5));
+
+      //Exemplo Classes Abstartas
+      Corrente c = new Corrente();
+      c.Creditar(100);
+      c.ExibirSaldo();
     }
   }
 }
