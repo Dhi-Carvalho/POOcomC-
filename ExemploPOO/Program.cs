@@ -1,4 +1,5 @@
 ﻿using System;
+using ExemploPOO.Interfaces;
 using ExemploPOO.Models;
 
 namespace ExemploPOO
@@ -70,6 +71,18 @@ namespace ExemploPOO
       Corrente c = new Corrente();
       c.Creditar(100);
       c.ExibirSaldo();
+
+      //Exemplo de utilização da Classe Object
+      Computador comp = new Computador();
+      System.Console.WriteLine(comp.ToString());
+
+      //Exemplo de Interface
+      ICalculadora calc1 = new Calculadora();
+      System.Console.WriteLine(calc1.Somar(10, 20));
+      System.Console.WriteLine(calc1.Subtrair(10, 20));
+      System.Console.WriteLine(calc1.Multiplicar(10, 20));
+      System.Console.WriteLine(calc1.Dividir(20, 10));
+
     }
   }
 }
